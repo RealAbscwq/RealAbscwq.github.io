@@ -7,7 +7,7 @@ body {
 
 header {
     background-color: #1a1a1a;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 nav ul {
@@ -15,8 +15,18 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
+}
+
+nav ul.left {
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+nav ul.right {
     justify-content: flex-end;
     margin-right: 20px;
+    flex-grow: 1;
 }
 
 nav ul li {
@@ -65,14 +75,14 @@ main {
     text-align: left;
 }
 
-.file-info p {
+.dropdown-btn {
     font-weight: bold;
+    cursor: pointer;
 }
 
-select {
-    width: 100%;
-    padding: 10px;
+.dropdown-content {
+    display: none;
     margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
 }
