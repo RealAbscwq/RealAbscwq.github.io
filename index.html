@@ -28,8 +28,7 @@
         
         <div class="file-info">
             <div class="dropdown-header" onclick="toggleDropdown()">
-                <p>Jak otworzyć pobrany plik:</p>
-                <span class="arrow">▼</span>
+                <p id="dropdown-header">▼ Jak otworzyć pobrany plik:</p>
             </div>
             <div id="dropdown-content" class="dropdown-content">
                 <p>1. Locate the downloaded file on your computer.</p>
@@ -43,10 +42,13 @@
     <script>
         function toggleDropdown() {
             var content = document.getElementById("dropdown-content");
+            var title = document.getElementById("dropdown-header");
             if (content.style.display === "block") {
                 content.style.display = "none";
+                title.text = "▼ Jak otworzyć pobrany plik:"
             } else {
                 content.style.display = "block";
+                title.text = "▲ Jak otworzyć pobrany plik:"
             }
         }
     </script>
