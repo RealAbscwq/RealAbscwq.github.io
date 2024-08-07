@@ -9,7 +9,10 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="left">
+                <li><a href="#">Logo or Title</a></li>
+            </ul>
+            <ul class="right">
                 <li><a href="#">example</a></li>
                 <li><a href="#">example 2</a></li>
             </ul>
@@ -24,12 +27,25 @@
         <p class="coming-soon">Więcej wkrótce!</p>
         
         <div class="file-info">
-            <p>Jak otworzyć pobrany plik:</p>
-            <select>
-                <option value="">Select an option</option>
-                <!-- Options can be added here -->
-            </select>
+            <p class="dropdown-btn" onclick="toggleDropdown()">Jak otworzyć pobrany plik:</p>
+            <div id="dropdown-content" class="dropdown-content">
+                <p>1. Locate the downloaded file on your computer.</p>
+                <p>2. Right-click on the file and select "Open With".</p>
+                <p>3. Choose the appropriate application to open the file.</p>
+                <p>4. If you do not have the required software, you may need to download it first.</p>
+            </div>
         </div>
     </main>
+
+    <script>
+        function toggleDropdown() {
+            var content = document.getElementById("dropdown-content");
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
