@@ -71,4 +71,35 @@ main {
 }
 
 .file-info {
-    margin-top:
+    margin-top: 30px;
+    text-align: left;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-header p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 14px;
+    color: #666;
+}
+
+.dropdown-content {
+    display: none;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-left: 3px solid #ccc;
+    margin-top: 10px;
+}
